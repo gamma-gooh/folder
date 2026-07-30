@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #121118;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#imagem {
+  background-color: #431867;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #28253a;
+  width: min(100%, 1000px);
+  padding: 10px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+#imagem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.carousel-wrapper {
+  width: min(100%, 520px);
+  margin-left: clamp(-480px, -35vw, -120px); /* <-- POSIÇÃO AJUSTADA POR TELA */
+}
+
+.cartoes {
+  width: 100%;
+}
+
+.cartao {
+  display: none;
+  background: #121118;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #2d2a3c;
+  padding: 10px;
+}
+
+.cartao.active {
+  display: block;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
+.texto1 {
+  text-indent: 30px;
+  text-align: justify;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  color: #D9D9D9;
+  line-height: 1.5;
+}
+
+.nav-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.nav-btn {
+  border: none;
+  background: #121118;
+  color: white;
+  font-size: 1.5rem;
+  width: 50%;
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.nav-btn:hover {
+  background: #374151;
+}
+
+.dots {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-left: clamp(-480px, -35vw, -120px); /* <-- MESMA POSIÇÃO DO CARD */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #534c7a;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cartoes {
+    width: 100%;
+  }
+
+  .nav-area {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .nav-btn {
+    width: 50%;
+    height: 44px;
+    border-radius: 50px;
+  }
+
+  .dots {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  #imagem {
+    margin-bottom: 20px;
+  }
+
+  .card-img {
+    max-height: 200px;
+  }
+}
+
+.pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 6rem;
+  font-weight: bold;
+}

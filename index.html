@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Absolute Cinema</title>
-    <link rel="shortcut icon" href="imagens/ac.png" type="image/x-icon"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute Cinema</title>
+  <link rel="shortcut icon" href="imagens/ac.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="CSS/login.css">
+  <!-- CSS PRINCIPAL -->
+  <link rel="stylesheet" href="CSS/index.css">
 
-    <!-- CORES ALTERNATIVAS -->
-    <!-- <link rel="stylesheet" href="CSS/loginALT.css"> -->
-
+  <!-- CSS ALTERNATIVO -->
+  <!-- <link rel="stylesheet" href="CSS/indexALT.css"> -->
 </head>
 <body>
-    <picture id="imagem">
-        <source media="(max-width:650px )" srcset="imagens/400px.png" type="image/png">
-        <source media="(max-width:1050px )" srcset="imagens/600px.png"> 
-        <img src="imagens/1000px.png" alt="capa">
-    </picture>
-    
-    <div class="cartoes" >
-        <div class="cartao">
-            <h2 id="titulo">LUZ</h2>
-                <p class="texto1">A iluminação transforma cada cena em uma experiência única. A intensidade, a direção e a cor de cada fonte de luz influenciam a percepção do espectador, destacando emoções, personagens e detalhes importantes. Assim, a fotografia ganha força e torna a narrativa mais envolvente e memorável.</p>
-        </div>
-        <div class="cartao">
-            <h2 id="titulo">CÂMERA</h2>
-                <p class="texto1">A câmera define como cada cena será apresentada ao público, influenciando emoções, foco e interpretação. O enquadramento, a posição, os movimentos e a distância orientam o olhar do espectador, destacam elementos importantes e fortalecem a narrativa, criando uma experiência cinematográfica envolvente e única.</p>
 
-        </div>
+  <picture id="imagem">
+    <source media="(max-width:650px)" srcset="imagens/400px.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="imagens/600px.png">
+    <img src="imagens/1000px.png" alt="capa">
+  </picture>
 
-        <div class="cartao">
-            <h2 id="titulo">AÇÃO</h2>
-            <p class="texto1">A ação representa tudo o que acontece diante da câmera e dá ritmo à narrativa. Os movimentos dos personagens, as expressões, os gestos e as interações tornam cada cena mais dinâmica e significativa. Quando bem planejada, a ação transmite emoções, conduz a atenção do espectador e reforça a intenção da história, criando momentos envolventes que aumentam a imersão e tornam a experiência cinematográfica mais intensa, marcante e memorável para o público do início ao fim da produção.</p>
+  <div class="carousel-wrapper">
+    <div class="cartoes">
+      <div class="cartao active">
+        <img src="imagens/luzesteatro.jpg" alt="Imagem do card 1" class="card-img">
+        <h2 class="titulo">LUZES</h2>
+        <p class="texto1">
+          A iluminação transforma cada cena em uma experiência única. A intensidade, a direção e a cor de cada fonte de luz influenciam a percepção do espectador, destacando personagens, ambientes e emoções. Cada escolha visual reforça a narrativa e cria atmosferas marcantes para o público.
+        </p>
+
+        <div class="nav-area">
+          <button class="nav-btn" onclick="prevCard()">❮</button>
+          <button class="nav-btn" onclick="nextCard()">❯</button>
         </div>
+      </div>
+
+      <div class="cartao">
+        <img src="imagens/cameraspb.jpe" alt="Imagem do card 2" class="card-img">
+        <h2 class="titulo">CÂMERA</h2>
+        <p class="texto1">
+          A iluminação transforma cada cena em uma experiência única. A intensidade, a direção e a cor de cada fonte de luz influenciam a percepção do espectador, destacando personagens, ambientes e emoções. Cada escolha visual reforça a narrativa e cria atmosferas marcantes para o público.
+        </p>
+
+        <div class="nav-area">
+          <button class="nav-btn" onclick="prevCard()">❮</button>
+          <button class="nav-btn" onclick="nextCard()">❯</button>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <img src="imagens/sompb.jpe" alt="Imagem do card 3" class="card-img">
+        <h2 class="titulo">SOM</h2>
+        <p class="texto1">
+          O som é um elemento essencial da linguagem cinematográfica, responsável por ampliar as emoções e dar vida às cenas. Diálogos, efeitos sonoros, trilhas musicais e momentos de silêncio influenciam a percepção do espectador, reforçando a narrativa e tornando cada sequência mais envolvente.
+        </p>
+
+        <div class="nav-area">
+          <button class="nav-btn" onclick="prevCard()">❮</button>
+          <button class="nav-btn" onclick="nextCard()">❯</button>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <img src="imagens/drama.png" alt="Imagem do card 4" class="card-img">
+        <h2 class="titulo">AÇÃO</h2>
+        <p class="texto1">
+          Representa tudo o que acontece diante da câmera e conduz o ritmo. Os movimentos dos personagens, as expressões, os gestos e as interações tornam cada cena mais dinâmica. Cada acontecimento desperta emoções, prende a atenção do público e fortalece a experiência cinematográfica.
+        </p>
+
+        <div class="nav-area">
+          <button class="nav-btn" onclick="prevCard()">❮</button>
+          <button class="nav-btn" onclick="nextCard()">❯</button>
+        </div>
+      </div>
     </div>
-    <div id="next">
-        <a href="indice.html">indice</a></p>
-    </div>
+  </div>
 
+  <div class="dots">
+    <span class="dot active" onclick="goToCard(0)"></span>
+    <span class="dot" onclick="goToCard(1)"></span>
+    <span class="dot" onclick="goToCard(2)"></span>
+    <span class="dot" onclick="goToCard(3)"></span>
+  </div>
 
+  <script src="extras/script.js"></script>
 
+  <div class="pagina">
+    <a href="filmes.html">pagina filmes</a>
+  </div>
 </body>
 </html>
