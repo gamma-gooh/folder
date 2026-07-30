@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: #121118;
+  color: white;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.linha-capas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.capas {
+  box-shadow: 5px 5px 15px #2d2a3c;
+  background-color: #121118;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: solid #2d2a3c;
+  text-align: center;
+  width: 450px;
+  height: 249px;
+  transition: all 0.4s ease;
+}
+
+.capas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.capas:hover {
+  box-shadow: 10px 10px 20px #b00351;
+  transform: scale(1.03);
+}
+
+#next {
+  font-family: 'Montserrat';
+  font-size: 5em;
+}
+
+@media (max-width: 600px) {
+  .linha-capas {
+    gap: 15px;
+  }
+
+  .capas {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 450 / 249;
+  }
+
+  .capas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #next {
+    font-size: 2.5em;
+  }
+
+  .subtitulo {
+    font-size: 2em;
+  }
+}
