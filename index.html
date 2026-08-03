@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Absolute Cinema</title>
+
   <link rel="shortcut icon" href="imagens/ac.png" type="image/x-icon">
 
   <!-- CSS PRINCIPAL -->
   <link rel="stylesheet" href="CSS/index.css">
 
-  <!-- CSS ALTERNATIVO -->
-  <!-- <link rel="stylesheet" href="CSS/indexALT.css"> -->
 </head>
 <body>
+
+  
 
   <picture id="imagem">
     <source media="(max-width:650px)" srcset="imagens/400px.png" type="image/png">
@@ -20,6 +21,16 @@
     <img src="imagens/1000px.png" alt="capa">
   </picture>
 
+  <div class="menu-container">
+    <button id="menuBtn">☰</button>
+
+    <nav id="menu">
+      <a href="html/filmes.html">Filmes</a>
+      <a href="html/series.html">Séries</a>
+      <a href="html/Marvel.html">Marvel</a>
+    </nav>
+  
+  </div>
   <div class="carousel-wrapper">
     <div class="cartoes">
       <div class="cartao active">
@@ -83,10 +94,7 @@
     <span class="dot" onclick="goToCard(3)"></span>
   </div>
 
-  <script src="extras/script.js"></script>
-
-  <div class="pagina">
-    <a href="filmes.html">pagina filmes</a>
-  </div>
+  <script src="extras/card.js"></script>
+  <script src="extras/catalogo.js"></script>
 </body>
 </html>

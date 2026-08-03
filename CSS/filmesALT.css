@@ -93,6 +93,30 @@ body {
   margin-top: 70px;
 }
 
+.casa {
+    margin-left:3em;
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+#menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  background: #1f1f2a;
+  padding: 12px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+
 .menu-container {
   position: relative;
   display: inline-block;
@@ -103,7 +127,7 @@ body {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #D9D9D9;
+  color: white;
 }
 
 #menu {
@@ -112,12 +136,12 @@ body {
   top: 100%;
   left: 0;
   margin-top: 8px;
-  padding: 10px 0;
-  background-color: #3a011a;
+  padding: 10px 15px;
+  background-color: #050119;
   border-radius: 8px;
   flex-direction: column;
+  gap: 10px;
   z-index: 1000;
-  min-width: 180px;
 }
 
 #menu.aberto {
@@ -125,17 +149,7 @@ body {
 }
 
 #menu a {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  color: #D9D9D9;
+  color: white;
   text-decoration: none;
-  font-size: 2em;
-  padding: 8px 15px;
-  border-bottom: 1px solid #D9D9D9;
-  text-align: center;
-}
-
-#menu a:last-child {
-  border-bottom: none;
+  font-size: 1.2em;
 }
