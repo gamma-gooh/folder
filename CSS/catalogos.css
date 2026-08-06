@@ -10,6 +10,7 @@ body {
 .subtitulo {
   text-align: center;
   font-size: 3em;
+  color: #cc9d04;
 }
 
 #next {
@@ -27,13 +28,13 @@ body {
 }
 
 .capas {
-  box-shadow: 5px 5px 15px #2d2a3c;
+  box-shadow: 0 0 20px #2d2a3c;
   background-color: #121118;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: solid #2d2a3c;
+  border: solid #aa8302  2px;
   text-align: center;
   width: 450px;
   height: 249px;
@@ -49,7 +50,7 @@ body {
 }
 
 .capas:hover {
-  box-shadow: 10px 10px 20px #b00351;
+  box-shadow: 0 0 50px #6717ad;
   transform: scale(1.1);
 }
 
@@ -113,7 +114,7 @@ body {
   left: 0;
   margin-top: 8px;
   padding: 10px 0;
-  background-color: #3a011a;
+  background-color: #6717ad;
   border-radius: 8px;
   flex-direction: column;
   z-index: 1000;
