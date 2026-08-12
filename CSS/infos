@@ -1,18 +1,29 @@
 /* Coloracão do site
 #d9d9d9 texto 
-#121118 fundo
-#6717ad kmenu
+#372790 fundo
+#6717ad menu
 #cc9d04 titulo
+#690ce2
 
- */
+/* 
 
-/* SERIES
+(FILMES)
 
-FILMES
+olhos de gato
+avatar 
+(truque de mestre todos) 3
+(piratas do caribe todos) 5
+(todo mundo em pânico todos) 6
+16
 
-invocação do mal
-hereditário
-suzume
+(SERIES)
+
+avatar o ultimo mestre do ar
+lidia poet
+cyberpunk
+o samurai de olhos azuis
+Grimm
+the bear
 
 (O MCU INTEIRO)
 
@@ -53,7 +64,7 @@ Homem-Aranha: Sem Volta para Casa
 Doutor Estranho no Multiverso da Loucura
 Gavião Arqueiro
 Cavaleiro da Lua
-Ms. Marvel
+Ms.Marvel
 Thor: Amor e Trovão
 She-Hulk: Advogada
 Pantera Negra: Wakanda Para Sempre
@@ -69,7 +80,7 @@ Thunderbolts
 Wonder Man
 Homem-Aranha: um novo dia
 
-(ghibli inteiro)
+(GHIBLI)
 
 Nausicaä do Vale do Vento (1984)
 O Castelo no Céu (1986)
@@ -94,7 +105,7 @@ As Memórias de Marnie (2014)
 Aya e a Bruxa (2020)
 O Menino e a Garça (2023)
 
-(X-men)
+(X-MEN)
 
 X-Men: Primeira Classe
 X-Men: Dias de um Futuro Esquecido
@@ -109,4 +120,6 @@ Deadpool
 Deadpool 2
 Os Novos Mutantes
 Deadpool & Wolverine
-Logan */
+Logan 
+
+*/
